@@ -5,9 +5,13 @@
     <preference name="Orientation" value="landscape" />
     <preference name="KeyboardShrinksView" value="true" />
     <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true"/>
     <preference name="DisallowOverscroll" value="true"/>
     <preference name="KeepRunning" value="false"/>
     <preference name="ErrorUrl" value="index.html"/>
+    <preference name="ShowTitle" value="true"/>
+	<preference name="AndroidLaunchMode" value="singleTop"/>
+
    <!--  <preference name="BackgroundColor" value="0xffffffff"/>  -->
     
     <preference name="TopActivityIndicator" value="whiteLarge"/>
