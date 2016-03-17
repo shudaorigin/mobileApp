@@ -18,6 +18,10 @@
  *
 */
 
+cordova.define("cordova-plugin-network-information.network", function(require, exports, module) {
+	
+
+
 var exec = require('cordova/exec'),
     cordova = require('cordova'),
     channel = require('cordova/channel'),
@@ -89,3 +93,5 @@ channel.onCordovaReady.subscribe(function() {
 });
 
 module.exports = me;
+
+})

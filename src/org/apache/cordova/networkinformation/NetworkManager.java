@@ -198,8 +198,8 @@ public class NetworkManager extends CordovaPlugin {
             extraInfo = info.getExtraInfo();
         }
 
-        Log.d("CordovaNetworkManager", "Connection Type: " + type);
-        Log.d("CordovaNetworkManager", "Connection Extra Info: " + extraInfo);
+//        Log.d("CordovaNetworkManager", "Connection Type: " + type);
+//        Log.d("CordovaNetworkManager", "Connection Extra Info: " + extraInfo);
 
         JSONObject connectionInfo = new JSONObject();
 

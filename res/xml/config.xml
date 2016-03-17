@@ -8,13 +8,14 @@
     <preference name="HideKeyboardFormAccessoryBar" value="true"/>
     <preference name="DisallowOverscroll" value="true"/>
     <preference name="KeepRunning" value="false"/>
-    <preference name="ErrorUrl" value="index.html"/>
+    <preference name="ErrorUrl" value="file:///android_asset/www/index.html"/>
     <preference name="ShowTitle" value="true"/>
 	<preference name="AndroidLaunchMode" value="singleTop"/>
-
+   <!--  <preference name="LoadUrlTimeoutValue" value="10000"/> -->
    <!--  <preference name="BackgroundColor" value="0xffffffff"/>  -->
-    
+   <!-- <preference name="InAppBrowserStorageEnabled" value="true"/> -->
     <preference name="TopActivityIndicator" value="whiteLarge"/>
+    <preference name="loadingDialog" value="提示,正在加载数据" />
  
    <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
@@ -29,7 +30,9 @@
     <feature name="NetworkStatus">
         <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
-    
+      <feature name="AppPlugin">
+        <param name="android-package" value="org.apache.cordova.appplugin.AppPlugin" />
+    </feature>
     <!-- Allow links to example.com -->
 	<allow-navigation href="http://baidu.com/*" />
 	

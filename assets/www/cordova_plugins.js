@@ -25,8 +25,9 @@ module.exports = [
         "merges": [
             "navigator.notification"
         ]
-    },{
-        "file": "plugins/cordova-plugin-network/www/network.js",
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/www/network.js",
         "id": "cordova-plugin-network-information.network",
         "clobbers": [
             "navigator.connection",
@@ -34,10 +35,17 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-network/www/Connection.js",
+        "file": "plugins/cordova-plugin-network-information/www/Connection.js",
         "id": "cordova-plugin-network-information.Connection",
         "clobbers": [
             "Connection"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-app/appPlugin.js",
+        "id": "cordova-plugin-app.AppPlugin",
+        "clobbers": [
+            "AppPlugin"
         ]
     }
 ];

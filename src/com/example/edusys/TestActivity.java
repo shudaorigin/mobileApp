@@ -26,7 +26,8 @@ public class TestActivity extends CordovaActivity {
         // Load your application
         // launchUrl = "file:///android_asset/www/index.html"
         launchUrl = "file:///android_asset/www/index.html";
-        loadUrl("http://192.168.1.8:3000/app");
+//        loadUrl("http://192.168.1.8:3000/app");
+        this.loadUrl(launchUrl);
     }
 
     @Override
