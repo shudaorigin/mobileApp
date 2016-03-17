@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jimmy.embeddedcordovawebviewdemo.TestCordovaWithLayoutActivity">
+
+     <TextView
+        android:id="@+id/topDiv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF0000"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="This is native text view"
+        />
+
+    <org.apache.cordova.engine.SystemWebView
+        android:id="@+id/cordovaWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topDiv"
+        android:layout_above="@+id/bottom_panel"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="50dp" />
+   
+       <LinearLayout android:id="@id/bottom_panel"   
+        android:layout_width="fill_parent"   
+        android:layout_height="wrap_content"   
+        android:orientation="horizontal"  
+        android:layout_alignParentBottom="true" >
+			     <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="50dp"
+			        android:background="#FF0000"
+			        android:textColor="#FFFFFF"
+			        android:gravity="center"
+			        android:text="This is native text view"
+			        />
+     </LinearLayout>
+</RelativeLayout>

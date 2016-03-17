@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="navigation">
+        <attr name="strBtnLeft" format="string" />
+        <attr name="strBtnRight" format="string" />
+        <attr name="strTitle" format="string" />
+        <attr name="left_drawable" format="reference"></attr>
+        <attr name="right_drawable" format="reference"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="custom_view">
+        <attr name="custom_id" format="integer" />
+        <attr name="src" format="reference" />
+        <attr name="background" format="reference" />
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+
+</resources>
